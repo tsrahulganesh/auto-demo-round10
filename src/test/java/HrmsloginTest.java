@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 
-public class Hrmslogin {
+public class HrmsloginTest {
 
     public static void main(String[] args) {
         // Set ChromeDriver path

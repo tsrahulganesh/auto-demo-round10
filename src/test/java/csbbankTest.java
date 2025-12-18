@@ -14,7 +14,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 
-public class csbbank {
+public class csbbankTest {
 
     public static void main(String[] args) {
         // Set ChromeDriver path (adjust if needed)
