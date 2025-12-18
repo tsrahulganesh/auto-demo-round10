@@ -34,5 +34,5 @@ pipeline:
                   identifier: Run_1
                   spec:
                     shell: Bash
-                    command: mvn clean test
+                    command: mvn clean install
                   description: desc push
