@@ -1,0 +1,38 @@
+pipeline:
+  name: Banklogin
+  identifier: Banklogin
+  projectIdentifier: Demo_gitrepo
+  orgIdentifier: default
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: rrahul
+        repoName: auto-demo-round10
+        build: <+input>
+  stages:
+    - stage:
+        name: auderu10build
+        identifier: auderu10build
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          buildIntelligence:
+            enabled: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Run_1
+                  identifier: Run_1
+                  spec:
+                    shell: Bash
+                    command: mvn clean instal
+                  description: desc push
