@@ -21,7 +21,7 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.fail;
 
-public class CsbBankLoginTest {
+public class CsbBankTest {
 
     private WebDriver driver;
 
