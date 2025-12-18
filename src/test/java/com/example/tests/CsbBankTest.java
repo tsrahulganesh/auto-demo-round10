@@ -219,3 +219,4 @@ public class CsbBankLoginTest {
                 .replace("<", "&lt;")
                 .replace(">", "&gt;");
     }
+}
