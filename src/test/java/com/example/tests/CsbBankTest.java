@@ -28,7 +28,9 @@ public class CsbBankTest {
     @BeforeEach
     void setUp() {
 
-        // NOTE (CI/Harness):
+        ChromeOptions options = new ChromeOptions();
+
+        // NOTE (CI/Harness)
         // Required for CI /Linux containers
         options.addArguments("--headless=new");
         options.addArguments("--no-sandbox");
@@ -42,9 +44,7 @@ public class CsbBankTest {
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--disable-notifications");
 
-        // Recommended for CI/Harness (headless):
-        // options.addArguments("--headless=new", "--disable-gpu", "--window-size=1920,1080");
-
+        
         driver = new ChromeDriver(options);
         driver.manage().window().maximize();
     }
