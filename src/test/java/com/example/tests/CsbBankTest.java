@@ -27,10 +27,15 @@ public class CsbBankTest {
 
     @BeforeEach
     void setUp() {
+
         // NOTE (CI/Harness):
-        // In Linux containers, do NOT set a Windows chromedriver path.
-        // Selenium 4+ can auto-manage drivers via Selenium Manager.
-        // If you run locally on Windows, you can uncomment the next line:
+        // Required for CI /Linux containers
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--disable-gpu");
+        options.addArguments("--window-size=1920,1080");
+        
         // System.setProperty("webdriver.chrome.driver", "C:\\Users\\FA62XEA\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
 
         ChromeOptions options = new ChromeOptions();
