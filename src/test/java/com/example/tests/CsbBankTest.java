@@ -38,9 +38,6 @@ public class CsbBankTest {
         options.addArguments("--disable-gpu");
         options.addArguments("--window-size=1920,1080");
         
-        // System.setProperty("webdriver.chrome.driver", "C:\\Users\\FA62XEA\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
-
-        ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--disable-notifications");
 
